@@ -18,7 +18,7 @@ public class AppTest
         MyStack<Integer> stack = new MyStack<>();
         assertTrue(stack.isEmpty());
         stack.push(1);
-
+        stack.push(2);
         assertEquals(Integer.valueOf(1), stack.pop());
     }
 
