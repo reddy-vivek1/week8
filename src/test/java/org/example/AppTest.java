@@ -19,7 +19,9 @@ public class AppTest
         assertTrue(stack.isEmpty());
         stack.push(1);
         stack.push(2);
+        assertEquals(Integer.valueOf(2), stack.pop());
         assertEquals(Integer.valueOf(1), stack.pop());
+
     }
 
 }
