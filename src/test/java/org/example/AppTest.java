@@ -4,39 +4,22 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
+import java.util.Optional;
+
 /**
  * Unit test for simple App.
  */
 public class AppTest
     extends TestCase
 {
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
     public void testPop()
     {
-        MyStack<Integer> stack = new MyStack<Integer>();
-
+        MyStack<Integer> stack = new MyStack<>();
         assertTrue(stack.isEmpty());
+        stack.push(1);
 
+        assertEquals(Integer.valueOf(1), stack.pop());
     }
 
 }
