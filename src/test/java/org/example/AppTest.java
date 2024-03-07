@@ -7,7 +7,7 @@ import junit.framework.TestSuite;
 /**
  * Unit test for simple App.
  */
-public class AppTest 
+public class AppTest
     extends TestCase
 {
     /**
@@ -31,8 +31,12 @@ public class AppTest
     /**
      * Rigourous Test :-)
      */
-    public void testApp()
+    public void testPop()
     {
-        assertTrue( true );
+        MyStack<Integer> stack = new MyStack<Integer>();
+
+        assertTrue(stack.isEmpty());
+
     }
+
 }
